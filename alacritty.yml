@@ -17,8 +17,8 @@ env:
 # (changes require restart)
 window:
   dimensions:
-    columns: 95
-    lines: 75
+    columns: 120
+    lines: 100
 
 # Adds this many blank pixels of padding around the window
 # Units are physical pixels; this is not DPI aware.
@@ -340,7 +340,8 @@ live_config_reload: true
 # You can set shell.program to the path of your favorite shell, e.g. /bin/fish.
 # Entries in shell.args are passed unmodified as arguments to the shell.
 shell:
-  args: -l
   program: /usr/local/bin/bash
+  args:
+    - --login
 
 # vim: nospell

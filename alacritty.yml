@@ -15,18 +15,16 @@ env:
 
 # Window dimensions in character columns and lines
 # (changes require restart)
-window:
-  dimensions:
-    columns: 120
-    lines: 100
-
-# Adds this many blank pixels of padding around the window
-# Units are physical pixels; this is not DPI aware.
-# (change requires restart)
-window:
-  padding:
-    x: 2
-    y: 2
+# window:
+#   dimensions:
+#     columns: 120
+#     lines: 100
+#     # Adds this many blank pixels of padding around the window
+#     # Units are physical pixels; this is not DPI aware.
+#     # (change requires restart)
+#   padding:
+#     x: 2
+#     y: 2
 
 scrolling:
   # How many lines of scrollback to keep,
@@ -294,7 +292,7 @@ key_bindings:
   - { key: Delete,                        chars: "\x1b[3~"                     }
 
     # Open a new alacritty window
-  - { key: N,        mods: Command,       command: { program: "/usr/bin/open", args: [ "-n", "/Users/trevor/Applications/Alacritty.app" ]} }
+  - { key: N,        mods: Command,       command: { program: "/usr/bin/open", args: [ "-n", "/Applications/Alacritty.app" ]} }
 
     # shortcuts for tmux. the leader key is control-b (0x02)
   - { key: W,        mods: Command,       chars: "\x02&"                       }  # close tab (kill)
